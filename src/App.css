@@ -17,35 +17,88 @@ ol, ul {
   margin-bottom: 10px;
 }
 
-.square {
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
+  border: 3px solid #999;
+  margin-right: 1px;
+  margin-top: 1px;
   padding: 0;
-  text-align: center;
-  width: 34px;
-  height: 34px;
+  width: 50px;
+  height: 50px;
 }
 
-.square:focus {
+.text-num {
+  text-align:center;
+  vertical-align:middle;
+  background: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: normal;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding: 0;
+}
+.text-op {
+  text-align:center;
+  vertical-align:middle;
+  background: #fff;
+  float: left;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: normal;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding: 8px;
+}
+
+.number:focus {
   outline: none;
 }
-
-.kbd-navigation .square:focus {
+.kbd-navigation .number:focus {
+  background: #ddd;
+}
+.operand:focus {
+  outline: none;
+}
+.kbd-navigation .operand:focus {
   background: #ddd;
 }
 
+.problem {
+  display: flex;
+  align-items: center; 
+}
+.input {
+  display: flex;
+  align-items: center; 
+  width: 100%;
+}
+.input-row {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  width: 100%;
+  border: 3px solid #999;
+}
+.input-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.input-button {
+  width: 30%;
+  max-width: 80px;
+  height: 50px;
+}
 .game {
   display: flex;
-  flex-direction: row;
+  align-items: center; 
+  justify-content: center;
+  flex-direction: column;  
 }
-
 .game-info {
   margin-left: 20px;
 }
