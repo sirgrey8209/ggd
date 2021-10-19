@@ -66,6 +66,17 @@ ol, ul {
 .kbd-navigation .operand:focus {
   background: #ddd;
 }
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+}
+.timer-gauge {
+  border: 3px solid #999;
+  background-color: red;
+  height: 8px;
+}
 
 .problem {
   display: flex;
@@ -74,14 +85,15 @@ ol, ul {
 .input {
   display: flex;
   align-items: center; 
+  flex-direction: column;  
   width: 100%;
+  margin-top: 16px;
 }
 .input-row {
   display: flex;
   align-items: center; 
   justify-content: center;
   width: 100%;
-  border: 3px solid #999;
 }
 .input-row:after {
   clear: both;
@@ -92,6 +104,7 @@ ol, ul {
   width: 30%;
   max-width: 80px;
   height: 50px;
+  font-size: 35px;
 }
 .game {
   display: flex;
